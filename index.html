@@ -7,12 +7,21 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body>
+<body onscroll=showNewMenu()>
     <div id="navbar"></div>
+    <div id="searchBar"></div>
+    <div id="homePage" class="hidden"></div>
     <script>
         fetch("/navbar.html").
         then(res=>res.text()).
         then(data=>document.getElementById("navbar").innerHTML=data);
+        fetch("/searchBar.html").
+        then(res=>res.text()).
+        then(data=>document.getElementById("searchBar").innerHTML=data);
+        fetch("/home.html").
+        then(res=>res.text()).
+        then(data=>document.getElementById("homePage").innerHTML=data);
     </script>
+    <script src="/script.js"></script>
 </body>
 </html>
