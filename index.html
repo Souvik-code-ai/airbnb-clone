@@ -7,10 +7,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="./output.css" rel="stylesheet">
 </head>
-<body onscroll=showNewMenu()>
+<body onscroll=showNewMenu() >
     <div id="navbar"></div>
     <div id="searchBar"></div>
     <div id="homePage" class="hidden"></div>
+    <div id="inspirePage" class="bg-gray-200"></div>
     <script>
         fetch("/navbar.html").
         then(res=>res.text()).
@@ -21,6 +22,9 @@
         fetch("/home.html").
         then(res=>res.text()).
         then(data=>document.getElementById("homePage").innerHTML=data);
+        fetch("/inspire.html").
+        then(res=>res.text()).
+        then(data=>document.getElementById("inspirePage").innerHTML=data);
     </script>
     <script src="/script.js"></script>
 </body>

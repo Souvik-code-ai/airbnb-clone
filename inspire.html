@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspire Page</title>
+</head>
+<body>
+    <div id="inspire" class="w-9/12 h-auto flex flex-col justify-center items-between my-20 mx-15">
+        <div id="inspireHeading" class="my-5 text-2xl">Inspiration for future getaways</div>
+        <div id="inspireTopic" class="flex flex-row justify-between items-center w-7/12 my-5">
+            <div id="topic1" class="text-gray-700 cursor-pointer" onclick=showPopular()>Popular</div>
+            <div id="topic2" class="text-gray-700 cursor-pointer" onclick=showArts()>Arts & Culture</div>
+            <div id="topic3" class="text-gray-700 cursor-pointer" onclick=showBeach()>Beach</div>
+            <div id="topic4" class="text-gray-700 cursor-pointer" onclick=showMountain()>Mountains</div>
+            <div id="topic5" class="text-gray-700 cursor-pointer" onclick=showOther()>Outdoors</div>
+            <div id="topic6" class="text-gray-700 cursor-pointer" onclick=showThings()>Things to do</div>
+        </div>
+        <div id="topicContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap  cursor-pointer px-3 ">
+                <div id="place1">Amsterdam</div>
+                <div id="type1" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer px-3 ">
+                <div id="place2">Wilmington</div>
+                <div id="type2" class="text-gray-600">Villa rentals</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place3">Key West</div>
+                <div id="type3" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start  cursor-pointer px-3 ">
+                <div id="place4">Savannah</div>
+                <div id="type4" class="text-gray-600">Villa rentals</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start  cursor-pointer px-3 ">
+                <div id="place5">Amsterdam</div>
+                <div id="type5" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place6">Manhattan</div>
+                <div id="type6" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place7">Kansas City</div>
+                <div id="type7" class="text-gray-600">Monthly rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">Ocean City</div>
+                <div id="type8" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">Kyoto</div>
+                <div id="type8" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">Madrid</div>
+                <div id="type8" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place8">London</div>
+                <div id="type8" class="text-gray-600">Apartment rentals</div>
+            </div>
+        </div>
+        <div id="artContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap  cursor-pointer px-3 ">
+                <div id="place1">The Galleria</div>
+                <div id="type1" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place2">Northstar California Resort</div>
+                <div id="type2" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place3">Gozo</div>
+                <div id="type3" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place4">Red Hook</div>
+                <div id="type4" class="text-gray-600">Villa rentals</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place5">Everglades</div>
+                <div id="type5" class="text-gray-600">Cottage rentals</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place6">Camelback ressort & Waterpark</div>
+                <div id="type6" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place7">Phoenix Convention Center</div>
+                <div id="type7" class="text-gray-600">Monthly rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place8">Lake Como</div>
+                <div id="type8" class="text-gray-600">Villa rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">Paris</div>
+                <div id="type8" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">cerittos Beach</div>
+                <div id="type8" class="text-gray-600">Flat rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place8">Jaco Beach</div>
+                <div id="type8" class="text-gray-600">Holiday rentals</div>
+            </div>
+        </div>
+        <div id="beachContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap   cursor-pointer px-3">
+                <div id="place1">Pipa Beach</div>
+                <div id="type1" class="text-gray-600">Beachfront rentals</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place2">Hana</div>
+                <div id="type2" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place3">Kata Beach</div>
+                <div id="type3" class="text-gray-600">Flat rentals</div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place4">Pattaya Beach</div>
+                <div id="type4" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start  cursor-pointer px-3">
+                <div id="place5">Jamaica Beach</div>
+                <div id="type5" class="text-gray-600">Beachfront rentals</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start   cursor-pointer px-3">
+                <div id="place6">Galveston Island</div>
+                <div id="type6" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place7">Cable Beach</div>
+                <div id="type7" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Worthing Beach</div>
+                <div id="type8" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Paris</div>
+                <div id="type8" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place8">Sanibel Island</div>
+                <div id="type8" class="text-gray-600">Monthly rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place8">Bavaro Beach</div>
+                <div id="type8" class="text-gray-600">Village rentals</div>
+            </div>
+        </div>
+        <div id="mountainContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap  cursor-pointer ">
+                <div id="place1">Kalispell</div>
+                <div id="type1" class="text-gray-600">Flat rentals</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place2">St. Moritz</div>
+                <div id="type2" class="text-gray-600">Monthly rentals</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place3">Chamonix</div>
+                <div id="type3" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place4">Roseville</div>
+                <div id="type4" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place5">Red Lodge</div>
+                <div id="type5" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start   cursor-pointer ">
+                <div id="place6">Boulder Island</div>
+                <div id="type6" class="text-gray-600">Cabin rentals</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place7">Oslo</div>
+                <div id="type7" class="text-gray-600">Monthly rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Clovis</div>
+                <div id="type8" class="text-gray-600">Apartment rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place8">Reno</div>
+                <div id="type8" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place8">Palo Olto</div>
+                <div id="type8" class="text-gray-600">House rentals</div>
+            </div>
+           
+        </div>
+        <div id="otherContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap  cursor-pointer ">
+                <div id="place1">Marathon</div>
+                <div id="type1" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place2">Page</div>
+                <div id="type2" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place3">Seward</div>
+                <div id="type3" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place4">Highlands</div>
+                <div id="type4" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place5">Kihei</div>
+                <div id="type5" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place6">osage Beach</div>
+                <div id="type6" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place7">Boise</div>
+                <div id="type7" class="text-gray-600">House rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place8">Stowe</div>
+                <div id="type8" class="text-gray-600">Cottage rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Tulsa</div>
+                <div id="type8" class="text-gray-600">Holiday rentals</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Banff</div>
+                <div id="type8" class="text-gray-600">Holiday rentals</div>
+            </div>
+           
+        </div>
+         <div id="thingsContent" class="hidden  flex-row justify-between items-center flex-wrap my-5 w-[90%]">
+            <div id="content1" class="flex flex-col justify-center items-start flex-wrap  cursor-pointer">
+                <div id="place1">Puebla</div>
+                <div id="type1" class="text-gray-600">Entertainment</div>
+            </div>
+            <div id="content2" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place2">Elgin</div>
+                <div id="type2" class="text-gray-600">Sports</div>
+            </div>
+            <div id="content3" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place3">Durham</div>
+                <div id="type3" class="text-gray-600">Things to do </div>
+            </div>
+            <div id="content4" class="flex flex-col justify-center items-start cursor-pointer ">
+                <div id="place4">Paris </div>
+                <div id="type4" class="text-gray-600">Nature and Outdoors</div>
+            </div>
+            <div id="content5" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place5">Miami</div>
+                <div id="type5" class="text-gray-600">tours</div>
+            </div>
+            <div id="content6" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place6">Mexico City</div>
+                <div id="type6" class="text-gray-600">Sightseeing</div>
+            </div>
+            <div id="content7" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place7">Barcelona</div>
+                <div id="type7" class="text-gray-600">Entertainment</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start   cursor-pointer">
+                <div id="place8">Rome</div>
+                <div id="type8" class="text-gray-600">Sports Activities</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Centro</div>
+                <div id="type8" class="text-gray-600">Things to do</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer ">
+                <div id="place8">Porto </div>
+                <div id="type8" class="text-gray-600">Art & Culture</div>
+            </div>
+            <div id="content8" class="flex flex-col justify-center items-start  cursor-pointer">
+                <div id="place8">Medina</div>
+                <div id="type8" class="text-gray-600">Things to do</div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
